@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="New project">
+    <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/exceptions/ElementException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/exceptions/ElementException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/ElementUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/ElementUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/TimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/TimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715152104289</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changes committed">
+      <option name="closed" value="true" />
+      <created>1715158259671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715158259671</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +180,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New project" />
-    <option name="LAST_COMMIT_MESSAGE" value="New project" />
+    <MESSAGE value="changes committed" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes committed" />
   </component>
 </project>
