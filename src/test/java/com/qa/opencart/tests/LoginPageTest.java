@@ -25,8 +25,6 @@ public class LoginPageTest extends BaseTest {
 
     @Test
     public void doLogin() {
-        loginPage.doLogin("dec2023@opencart.com", "Selenium@12345");
+        loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
     }
-
-
 }

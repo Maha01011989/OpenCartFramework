@@ -6,15 +6,20 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import java.io.IOException;
+import java.util.Properties;
+
 public class BaseTest {
     DriverFactory driverFactory;
+    protected Properties prop;
     protected LoginPage loginPage;
     WebDriver driver;
 
     @BeforeTest
-    public void setUp() {
+    public void setUp() throws IOException {
         driverFactory = new DriverFactory();
-        driver = driverFactory.initDriver("chrome");
+        prop = driverFactory.initProp();
+        driver = driverFactory.initDriver(prop);
         loginPage = new LoginPage(driver);
     }
 

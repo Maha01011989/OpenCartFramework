@@ -7,37 +7,49 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Locale;
+import java.util.Properties;
 
 public class DriverFactory {
 
     WebDriver driver;
+    Properties prop;
 
-    public WebDriver initDriver(String browserName)
-    {
+    public WebDriver initDriver(Properties prop) {
 
-        switch (browserName.toLowerCase()){
+        switch (prop.getProperty("browser").toLowerCase()) {
             case "chrome":
-                driver=new ChromeDriver();
+                driver = new ChromeDriver();
                 break;
             case "firefox":
-                driver=new FirefoxDriver();
+                driver = new FirefoxDriver();
                 break;
             case "edge":
-                driver=new EdgeDriver();
+                driver = new EdgeDriver();
                 break;
             case "safari":
-                driver=new SafariDriver();
+                driver = new SafariDriver();
                 break;
             default:
-                System.out.println("Please enter the right browser "+browserName);
+                System.out.println("Please enter the right browser " + prop.getProperty("browser"));
                 throw new BrowserException("No browser found");
 
         }
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+        driver.get(prop.getProperty("url"));
 
         return driver;
     }
+
+    public Properties initProp() throws IOException {
+        prop = new Properties();
+        FileInputStream fis = new FileInputStream("./src/test/resources/config/config.properties");
+        prop.load(fis);
+        return prop;
+    }
+
 }
