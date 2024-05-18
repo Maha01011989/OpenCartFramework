@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/AppConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/AccountsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/AccountsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountsPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +45,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.LoginPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPageTest.loginPageTitleTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPageTest.loginPageURLTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AccountsPageTest.executor": "Run",
+    "TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml.executor": "Run",
+    "TestNG.LoginPageTest.executor": "Run",
+    "TestNG.LoginPageTest.loginPageTitleTest.executor": "Run",
+    "TestNG.LoginPageTest.loginPageURLTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "settings.sync"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.LoginPageTest">
+}]]></component>
+  <component name="RunManager" selected="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml">
+    <configuration name="AccountsPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.opencart.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.opencart.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.tests.AccountsPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenCartFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenCartFramework" />
       <extension name="coverage">
@@ -113,6 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml" />
+        <item itemvalue="TestNG.AccountsPageTest" />
         <item itemvalue="TestNG.LoginPageTest" />
         <item itemvalue="TestNG.LoginPageTest.loginPageURLTest" />
         <item itemvalue="TestNG.LoginPageTest.loginPageTitleTest" />
@@ -175,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715159939637</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changes committed">
+      <option name="closed" value="true" />
+      <created>1716026934594</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716026934594</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
