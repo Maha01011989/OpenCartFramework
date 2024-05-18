@@ -6,24 +6,24 @@ import org.testng.annotations.Test;
 
 public class LoginPageTest extends BaseTest {
 
-    @Test
+    @Test(priority = 4)
     public void loginPageTitleTest() {
         String actTitle = loginPage.getLoginPageTitle();
         Assert.assertEquals(actTitle, "Account Login");
     }
 
-    @Test
+    @Test(priority = 3)
     public void loginPageURLTest() {
         String actURL = loginPage.getLoginPageURL();
         Assert.assertTrue(actURL.contains("route=account/login"));
     }
 
-    @Test
+    @Test(priority = 2)
     public void loginPagePwdLinkExistsTest() {
         Assert.assertTrue(loginPage.isForgotPwdLinkDisplayed());
     }
 
-    @Test
+    @Test(priority = 1)
     public void doLogin() {
         loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
     }
