@@ -93,6 +93,9 @@ public class ElementUtil {
         return element;
     }
 
+    public void doClear(By locator) {
+        getElement(locator).clear();
+    }
     public void doSendKeys(By locator, String value) {
         nullBlankCheck(value);
         getElement(locator).sendKeys(value);

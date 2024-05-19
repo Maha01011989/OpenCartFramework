@@ -13,6 +13,8 @@ public class LoginPage {
     private By loginButton = By.xpath("//input[@class='btn btn-primary']");
     private By forgotPwdLink = By.linkText("Forgotten Password");
 
+    private By registerLink = By.linkText("Register");
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         elementUtil = new ElementUtil(driver);
@@ -32,9 +34,14 @@ public class LoginPage {
     }
 
     public AccountsPage doLogin(String username, String pword) {
-        elementUtil.waitForElementVisible(email,5).sendKeys(username);
-        elementUtil.doSendKeys(password,pword,5);
+        elementUtil.waitForElementVisible(email, 5).sendKeys(username);
+        elementUtil.doSendKeys(password, pword, 5);
         elementUtil.doClick(loginButton);
         return new AccountsPage(driver);
+    }
+
+    public RegPage navigateToRegistrationPage() {
+        elementUtil.waitForElementVisible(registerLink,10).click();
+        return new RegPage(driver);
     }
 }

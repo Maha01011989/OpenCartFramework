@@ -26,7 +26,6 @@ public class AccountsPage {
     private By searchIcon = By.cssSelector("div#search button");
 
 
-
     public String getAccPageTitle() {
         String title = elementUtil.waitForTitleIs(AppConstant.ACCOUNTS_PAGE_TITLE, 5);
         System.out.println("Acc page title : " + title);
@@ -51,7 +50,7 @@ public class AccountsPage {
     public List<String> getAccountsPageHeadersList() {
         List<WebElement> headersEleList = elementUtil.getElements(headers);
         List<String> headersList = new ArrayList<String>();
-        for(WebElement e : headersEleList) {
+        for (WebElement e : headersEleList) {
             String header = e.getText();
             headersList.add(header);
         }
@@ -59,10 +58,11 @@ public class AccountsPage {
     }
 
 
-//    public SearchResultsPage doSearch(String SearchKey) {
-//        System.out.println("searching for : " + SearchKey);
-//        elementUtil.doSendKeys(search, SearchKey);
-//        elementUtil.doClick(searchIcon);
-//        return new SearchResultsPage(driver);
-//    }
+    public SearchResultsPage doSearch(String SearchKey) {
+        System.out.println("searching for : " + SearchKey);
+        elementUtil.doClear(search);
+        elementUtil.doSendKeys(search, SearchKey);
+        elementUtil.doClick(searchIcon);
+        return new SearchResultsPage(driver);
+    }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="OpenCartSuite">
-    <test name="Login Page Test" verbose="10">
+<suite name="OpenCartSuite" verbose="10" thread-count="2" parallel="tests">
+    <test name="Login Page Test" >
         <classes>
             <class name="com.qa.opencart.tests.LoginPageTest"/>
         </classes>

@@ -1,6 +1,7 @@
 package com.qa.opencart.factory;
 
 import com.qa.opencart.exceptions.BrowserException;
+import com.qa.opencart.logger.Log;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -23,25 +24,29 @@ public class DriverFactory {
         switch (prop.getProperty("browser").toLowerCase()) {
             case "chrome":
                 driver = new ChromeDriver();
+                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "firefox":
                 driver = new FirefoxDriver();
+                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "edge":
                 driver = new EdgeDriver();
+                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "safari":
                 driver = new SafariDriver();
+                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             default:
-                System.out.println("Please enter the right browser " + prop.getProperty("browser"));
+               // System.out.println("Please enter the right browser " + prop.getProperty("browser"));
+                Log.error("Browser name is not entered correctly");
                 throw new BrowserException("No browser found");
 
         }
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.get(prop.getProperty("url"));
-
         return driver;
     }
 

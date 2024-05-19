@@ -43,4 +43,9 @@ public class AccountsPageTest extends BaseTest {
         System.out.println(actHeadersList);
     }
 
+    @Test
+    public void searchTest() {
+        accountsPage.doSearch("macbook");
+    }
+
 }
