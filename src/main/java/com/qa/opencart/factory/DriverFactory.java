@@ -19,23 +19,29 @@ public class DriverFactory {
     WebDriver driver;
     Properties prop;
 
+    public static ThreadLocal<WebDriver> tlDriver=new ThreadLocal<WebDriver>();
+
     public WebDriver initDriver(Properties prop) {
 
         switch (prop.getProperty("browser").toLowerCase()) {
             case "chrome":
-                driver = new ChromeDriver();
+                //driver = new ChromeDriver();
+                tlDriver.set(new ChromeDriver());
                 Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "firefox":
-                driver = new FirefoxDriver();
+                //driver = new FirefoxDriver();
+                tlDriver.set(new FirefoxDriver());
                 Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "edge":
-                driver = new EdgeDriver();
+               // driver = new EdgeDriver();
+                tlDriver.set(new EdgeDriver());
                 Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "safari":
-                driver = new SafariDriver();
+               // driver = new SafariDriver();
+                tlDriver.set(new SafariDriver());
                 Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             default:
@@ -44,11 +50,17 @@ public class DriverFactory {
                 throw new BrowserException("No browser found");
 
         }
-        driver.manage().deleteAllCookies();
-        driver.manage().window().maximize();
-        driver.get(prop.getProperty("url"));
-        return driver;
+        getDriver().manage().deleteAllCookies();
+        getDriver().manage().window().maximize();
+        getDriver().get(prop.getProperty("url"));
+        return getDriver();
     }
+
+    public static WebDriver getDriver()
+    {
+        return tlDriver.get();
+    }
+
 
     public Properties initProp() throws IOException {
         prop = new Properties();
