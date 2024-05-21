@@ -38,7 +38,7 @@ public class RegPageTest extends BaseTest {
 
 
     @Test(dataProvider = "getUserDataFromExcel")
-    public void userRegTest(String fName,String lName, String emailId, String pNum, String password, String sub) {
+    public void userRegTest(String fName,String lName, String pNum, String password, String sub) {
         Assert.assertTrue(regPage.userRegister(fName,lName,StringUtils.getRandomEmailId(),pNum,password,sub));
     }
 
