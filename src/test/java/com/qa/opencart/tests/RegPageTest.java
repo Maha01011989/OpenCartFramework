@@ -1,13 +1,19 @@
 package com.qa.opencart.tests;
 
 import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.constants.AppConstant;
+import com.qa.opencart.utils.ExcelUtil;
 import com.qa.opencart.utils.StringUtils;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class RegPageTest extends BaseTest {
+
 
     @BeforeClass
     public void regSetUp() {
@@ -24,10 +30,16 @@ public class RegPageTest extends BaseTest {
         };
     }
 
+    @DataProvider
+    public Object[][] getUserDataFromExcel() throws IOException, InvalidFormatException {
 
-    @Test(dataProvider = "getUserData")
+        return ExcelUtil.getTestData(AppConstant.REGISTER_SHEET_NAME);
+    }
+
+
+    @Test(dataProvider = "getUserDataFromExcel")
     public void userRegTest(String fName,String lName, String emailId, String pNum, String password, String sub) {
-        Assert.assertTrue(regPage.userRegister(fName,lName,emailId,pNum,password,sub));
+        Assert.assertTrue(regPage.userRegister(fName,lName,StringUtils.getRandomEmailId(),pNum,password,sub));
     }
 
 
