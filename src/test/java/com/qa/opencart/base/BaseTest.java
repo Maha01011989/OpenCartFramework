@@ -15,11 +15,8 @@ public class BaseTest {
     protected LoginPage loginPage;
     protected AccountsPage accountsPage;
     protected SearchResultsPage searchResultsPage;
-
     protected ProductInfoPage productInfoPage;
-
     protected RegPage regPage;
-
     WebDriver driver;
 
     @BeforeTest
