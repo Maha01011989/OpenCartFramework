@@ -36,10 +36,5 @@ public class SearchResultsTest extends BaseTest {
         Assert.assertEquals(searchResultsPage.getSearchProductCount(), productCount);
     }
 
-    @Test
-    public void searchResultsTest() {
-        Assert.assertEquals(searchResultsPage.getSearchProductCount(), 3);
-    }
-
 }
 

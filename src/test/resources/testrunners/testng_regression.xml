@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="OpenCartSuite" verbose="10" thread-count="2" parallel="tests">
+<suite name="OpenCartSuite" verbose="10" thread-count="5" parallel="tests">
     <listeners>
         <listener
                 class-name="com.qa.opencart.listeners.ExtentReportListener"/>
@@ -15,5 +15,21 @@
             <class name="com.qa.opencart.tests.AccountsPageTest"/>
         </classes>
     </test>
+    <test name="Product Page Test">
+        <classes>
+            <class name="com.qa.opencart.tests.ProductPageInfoTest"/>
+        </classes>
+    </test>
+    <test name="Registration Page Test">
+        <classes>
+            <class name="com.qa.opencart.tests.RegPageTest"/>
+        </classes>
+    </test>
+    <test name="Search Results Page Test">
+        <classes>
+            <class name="com.qa.opencart.tests.SearchResultsTest"/>
+        </classes>
+    </test>
+
 
 </suite>

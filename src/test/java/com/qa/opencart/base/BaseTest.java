@@ -1,5 +1,7 @@
 package com.qa.opencart.base;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.qa.opencart.factory.DriverFactory;
 import com.qa.opencart.pages.*;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +20,9 @@ public class BaseTest {
     protected ProductInfoPage productInfoPage;
     protected RegPage regPage;
     WebDriver driver;
+ExtentReports report;
+ExtentTest test;
+
 
     @BeforeTest
     public void setUp() throws IOException {
@@ -25,6 +30,8 @@ public class BaseTest {
         prop = driverFactory.initProp();
         driver = driverFactory.initDriver(prop);
         loginPage = new LoginPage(driver);
+        report = new ExtentReports();
+       // test = report.startTest("ExtentDemo");
     }
 
     @AfterTest
@@ -32,5 +39,4 @@ public class BaseTest {
         driver.quit();
 
     }
-
 }

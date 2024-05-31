@@ -54,10 +54,10 @@ public class ProductPageInfoTest extends BaseTest{
 //    }
 
     @Test(dataProvider = "getProductImagesData")
-    public void productImagesCountTest(String searchKey, String productName, String imagesCount) {
+    public void productImagesCountTest(String searchKey, String productName, int imagesCount) {
         searchResultsPage = accountsPage.doSearch(searchKey);
         productInfoPage = searchResultsPage.selectProduct(productName);
-        Assert.assertEquals(productInfoPage.getProductImagesCount(), Integer.parseInt(imagesCount));
+        Assert.assertEquals(productInfoPage.getProductImagesCount(), imagesCount);
     }
 
     @Test
