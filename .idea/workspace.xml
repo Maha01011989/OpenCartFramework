@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/OptionsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountsPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/ProductPageInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/ProductPageInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/SearchResultsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/SearchResultsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\OpenCartFramework\src\test\resources\testdata" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice">
+  <component name="RunManager" selected="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml">
     <configuration name="FibonacciSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.FibonacciSeries" />
       <module name="OpenCartFramework" />
@@ -168,8 +166,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practice" />
         <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml" />
+        <item itemvalue="Application.Practice" />
         <item itemvalue="TestNG.ProductPageInfoTest.productImagesCountTest" />
         <item itemvalue="Application.FibonacciSeries" />
         <item itemvalue="TestNG.RegPageTest.userRegTest" />
@@ -296,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716892281551</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="changes committed">
+      <option name="closed" value="true" />
+      <created>1717162192891</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717162192891</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

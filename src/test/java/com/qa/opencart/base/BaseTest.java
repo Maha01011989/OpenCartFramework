@@ -7,6 +7,7 @@ import com.qa.opencart.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -20,18 +21,23 @@ public class BaseTest {
     protected ProductInfoPage productInfoPage;
     protected RegPage regPage;
     WebDriver driver;
-ExtentReports report;
-ExtentTest test;
+    ExtentReports report;
+    ExtentTest test;
 
-
+    @Parameters({"browser"})
     @BeforeTest
-    public void setUp() throws IOException {
+    public void setUp(String browserName) throws IOException {
         driverFactory = new DriverFactory();
         prop = driverFactory.initProp();
+
+        if (browserName != null) {
+            prop.setProperty("browser", browserName);
+        }
+
         driver = driverFactory.initDriver(prop);
         loginPage = new LoginPage(driver);
         report = new ExtentReports();
-       // test = report.startTest("ExtentDemo");
+
     }
 
     @AfterTest

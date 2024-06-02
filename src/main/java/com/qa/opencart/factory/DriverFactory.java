@@ -18,20 +18,22 @@ public class DriverFactory {
 
     WebDriver driver;
     Properties prop;
+    OptionsManager optionsManager;
 
     public static ThreadLocal<WebDriver> tlDriver=new ThreadLocal<WebDriver>();
 
     public WebDriver initDriver(Properties prop) {
+        optionsManager =new OptionsManager(prop);
 
         switch (prop.getProperty("browser").toLowerCase()) {
             case "chrome":
                 //driver = new ChromeDriver();
-                tlDriver.set(new ChromeDriver());
+                tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
                 Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "firefox":
                 //driver = new FirefoxDriver();
-                tlDriver.set(new FirefoxDriver());
+                tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
                 Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
                 break;
             case "edge":
