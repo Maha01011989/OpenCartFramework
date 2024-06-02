@@ -20,34 +20,34 @@ public class DriverFactory {
     Properties prop;
     OptionsManager optionsManager;
 
-    public static ThreadLocal<WebDriver> tlDriver=new ThreadLocal<WebDriver>();
+    public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 
     public WebDriver initDriver(Properties prop) {
-        optionsManager =new OptionsManager(prop);
+        optionsManager = new OptionsManager(prop);
 
         switch (prop.getProperty("browser").toLowerCase()) {
             case "chrome":
                 //driver = new ChromeDriver();
                 tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
-                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
+                Log.info(prop.getProperty("browser").toLowerCase() + " Browser opened successfully");
                 break;
             case "firefox":
                 //driver = new FirefoxDriver();
                 tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
-                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
+                Log.info(prop.getProperty("browser").toLowerCase() + " Browser opened successfully");
                 break;
             case "edge":
-               // driver = new EdgeDriver();
-                tlDriver.set(new EdgeDriver());
-                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
+                // driver = new EdgeDriver();
+                tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
+                Log.info(prop.getProperty("browser").toLowerCase() + " Browser opened successfully");
                 break;
             case "safari":
-               // driver = new SafariDriver();
+                // driver = new SafariDriver();
                 tlDriver.set(new SafariDriver());
-                Log.info(prop.getProperty("browser").toLowerCase()+" Browser opened successfully");
+                Log.info(prop.getProperty("browser").toLowerCase() + " Browser opened successfully");
                 break;
             default:
-               // System.out.println("Please enter the right browser " + prop.getProperty("browser"));
+                // System.out.println("Please enter the right browser " + prop.getProperty("browser"));
                 Log.error("Browser name is not entered correctly");
                 throw new BrowserException("No browser found");
 
@@ -58,8 +58,7 @@ public class DriverFactory {
         return getDriver();
     }
 
-    public static WebDriver getDriver()
-    {
+    public static WebDriver getDriver() {
         return tlDriver.get();
     }
 

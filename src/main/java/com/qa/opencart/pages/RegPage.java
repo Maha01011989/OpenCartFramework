@@ -1,5 +1,6 @@
 package com.qa.opencart.pages;
 
+import com.qa.opencart.utils.TimeUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -40,7 +41,7 @@ public class RegPage {
     public boolean userRegister(String firstName, String lastName, String email, String telephone, String password,
                                 String subscribe) {
 
-        eleutil.waitForElementVisible(this.firstName, 10).sendKeys(firstName);
+        eleutil.waitForElementVisible(this.firstName, TimeUtil.DEFAULT_Long_TIME).sendKeys(firstName);
         eleutil.doSendKeys(this.lastName, lastName);
         eleutil.doSendKeys(this.email, email);
         eleutil.doSendKeys(this.telephone, telephone);
@@ -56,7 +57,7 @@ public class RegPage {
         eleutil.doClick(agreeCheckBox);
         eleutil.doClick(continueBtn);
 
-        String regSuccessMessg = eleutil.waitForElementVisible(sucessMessg, 5).getText();
+        String regSuccessMessg = eleutil.waitForElementVisible(sucessMessg, TimeUtil.DEFAULT_Medium_TIME).getText();
         System.out.println(regSuccessMessg);
 
         if (regSuccessMessg.equals(AppConstant.USER_REG_SUCCESS_MESSG)) {

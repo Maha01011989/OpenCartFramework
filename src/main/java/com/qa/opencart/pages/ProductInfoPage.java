@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.qa.opencart.utils.TimeUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,7 +39,7 @@ public class ProductInfoPage {
     }
 
     public int getProductImagesCount() {
-        int totalImages = eleUtil.waitForElementsVisible(images, 10).size();
+        int totalImages = eleUtil.waitForElementsVisible(images, TimeUtil.DEFAULT_Long_TIME).size();
         System.out.println("Image count for " + getProductHeader() + " : " + totalImages);
         return totalImages;
     }

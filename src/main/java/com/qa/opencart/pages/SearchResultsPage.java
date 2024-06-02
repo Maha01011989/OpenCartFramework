@@ -2,6 +2,7 @@ package com.qa.opencart.pages;
 
 import java.util.List;
 
+import com.qa.opencart.utils.TimeUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,12 +26,12 @@ public class SearchResultsPage {
     }
 
     public int getSearchProductCount() {
-        return eleUtil.waitForElementsVisible(searchProducts, 10).size();
+        return eleUtil.waitForElementsVisible(searchProducts, TimeUtil.DEFAULT_Long_TIME).size();
     }
 
     public ProductInfoPage selectProduct(String productName) {
         System.out.println("searching for product: " + productName);
-        eleUtil.waitForElementVisible(By.linkText(productName), 10).click();
+        eleUtil.waitForElementVisible(By.linkText(productName), TimeUtil.DEFAULT_Long_TIME).click();
         return new ProductInfoPage(driver);
     }
 

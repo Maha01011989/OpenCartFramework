@@ -1,6 +1,7 @@
 package com.qa.opencart.pages;
 
 import com.qa.opencart.utils.ElementUtil;
+import com.qa.opencart.utils.TimeUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -22,11 +23,11 @@ public class LoginPage {
 
 
     public String getLoginPageTitle() {
-        return elementUtil.waitForTitleIs("Account Login", 5);
+        return elementUtil.waitForTitleIs("Account Login", TimeUtil.DEFAULT_Medium_TIME);
     }
 
     public String getLoginPageURL() {
-        return elementUtil.waitForURLContains("account/login", 5);
+        return elementUtil.waitForURLContains("account/login", TimeUtil.DEFAULT_Medium_TIME);
     }
 
     public boolean isForgotPwdLinkDisplayed() {
@@ -34,14 +35,14 @@ public class LoginPage {
     }
 
     public AccountsPage doLogin(String username, String pword) {
-        elementUtil.waitForElementVisible(email, 5).sendKeys(username);
-        elementUtil.doSendKeys(password, pword, 5);
+        elementUtil.waitForElementVisible(email, TimeUtil.DEFAULT_Medium_TIME).sendKeys(username);
+        elementUtil.doSendKeys(password, pword, TimeUtil.DEFAULT_Medium_TIME);
         elementUtil.doClick(loginButton);
         return new AccountsPage(driver);
     }
 
     public RegPage navigateToRegistrationPage() {
-        elementUtil.waitForElementVisible(registerLink,10).click();
+        elementUtil.waitForElementVisible(registerLink,TimeUtil.DEFAULT_Long_TIME).click();
         return new RegPage(driver);
     }
 }

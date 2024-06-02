@@ -2,6 +2,7 @@ package com.qa.opencart.tests;
 
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstant;
+import com.qa.opencart.errors.AppError;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -19,13 +20,13 @@ public class AccountsPageTest extends BaseTest {
     @Test
     public void accountsPageTitleTest() {
         String actTitle = accountsPage.getAccPageTitle();
-        Assert.assertEquals(actTitle, AppConstant.ACCOUNTS_PAGE_TITLE);
+        Assert.assertEquals(actTitle, AppConstant.ACCOUNTS_PAGE_TITLE, AppError.TITLE_NOT_FOUND);
     }
 
     @Test
     public void accountsPageURLTest() {
         String actURL = accountsPage.getAccPageURL();
-        Assert.assertTrue(actURL.contains(AppConstant.ACC_PAGE_URL_FRACTION));
+        Assert.assertTrue(actURL.contains(AppConstant.ACC_PAGE_URL_FRACTION),AppError.URL_NOT_FOUND);
     }
 
     @Test

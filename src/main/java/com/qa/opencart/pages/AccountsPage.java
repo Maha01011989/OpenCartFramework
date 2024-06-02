@@ -2,6 +2,7 @@ package com.qa.opencart.pages;
 
 import com.qa.opencart.constants.AppConstant;
 import com.qa.opencart.utils.ElementUtil;
+import com.qa.opencart.utils.TimeUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,23 +28,23 @@ public class AccountsPage {
 
 
     public String getAccPageTitle() {
-        String title = elementUtil.waitForTitleIs(AppConstant.ACCOUNTS_PAGE_TITLE, 5);
+        String title = elementUtil.waitForTitleIs(AppConstant.ACCOUNTS_PAGE_TITLE, TimeUtil.DEFAULT_Medium_TIME);
         System.out.println("Acc page title : " + title);
         return title;
     }
 
     public String getAccPageURL() {
-        String url = elementUtil.waitForURLContains(AppConstant.ACC_PAGE_URL_FRACTION, 5);
+        String url = elementUtil.waitForURLContains(AppConstant.ACC_PAGE_URL_FRACTION, TimeUtil.DEFAULT_Medium_TIME);
         System.out.println("acc page url : " + url);
         return url;
     }
 
     public boolean isLogoutLinkExist() {
-        return elementUtil.waitForElementVisible(logoutLink, 10).isDisplayed();
+        return elementUtil.waitForElementVisible(logoutLink, TimeUtil.DEFAULT_Long_TIME).isDisplayed();
     }
 
     public boolean myAccountLinkExist() {
-        return elementUtil.waitForElementVisible(myAccountLink, 10).isDisplayed();
+        return elementUtil.waitForElementVisible(myAccountLink, TimeUtil.DEFAULT_Long_TIME).isDisplayed();
     }
 
 
