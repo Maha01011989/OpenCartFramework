@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/errors/AppError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/errors/AppError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/AccountsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/AccountsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/ProductInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/ProductInfoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/RegPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/RegPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/SearchResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/TimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/TimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountsPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717337786832</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changes committed">
+      <option name="closed" value="true" />
+      <created>1717353449546</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717353449546</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
