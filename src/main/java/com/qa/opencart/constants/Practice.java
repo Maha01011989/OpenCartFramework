@@ -10,44 +10,13 @@ import java.util.*;
 public class Practice {
 
     public static void main(String args[]) {
-        // System.out.println(countVowels("I am an Indian"));
+        System.out.println(countVowels("I am an Indian"));
 
-//2.
-//        int b[] = {1, 1, 3};
-//        int a[] = {1, 3, 5, 7, 3, 5, 1};
-//        int k = 0;
-//        //o/p : 1,4
-//
-//        int arr1 = a.length;
-//        int arr2 = b.length;
-//
-//        //int finalArray[] = new int[a.length];
-//        Set<Integer> set = new HashSet<>();
-//
-//        if (arr2 < arr1) {
-//            for (int i = 0; i < arr2; i++)
-//                for (int j = 0; j < arr1; j++) {
-//                    if (b[i] == a[j]) {
-//                        set.add(b[i]);
-//                        k++;
-//                        break;
-//                    }
-//                }
-//        } else {
-//            for (int i = 0; i < arr1; i++)
-//                for (int j = 0; j < arr2; j++) {
-//                    if (a[i] == b[j]) {
-//                        set.add(a[i]);
-//                        k++;
-//                        break;
-//                    }
-//                }
-//        }
-//        System.out.println(set);
 
-        //3.
+        System.out.println(findCommonNumbersInArray(new int[]{1, 1, 3}, new int[]{1, 3, 5, 7, 3, 5, 1}));
 
-        System.out.println(getIndexValue(1,3,4));
+
+        System.out.println(getIndexValue(1, 3, 4));
 
 
     }
@@ -73,6 +42,36 @@ public class Practice {
 
     }
 
+    public static Set<Integer> findCommonNumbersInArray(int[] a, int[] b) {
+        int arr1 = a.length;
+        int arr2 = b.length;
+        int k = 0;
+
+        //int finalArray[] = new int[a.length];
+        Set<Integer> set = new HashSet<>();
+
+        if (arr2 < arr1) {
+            for (int i = 0; i < arr2; i++)
+                for (int j = 0; j < arr1; j++) {
+                    if (b[i] == a[j]) {
+                        set.add(b[i]);
+                        k++;
+                        break;
+                    }
+                }
+        } else {
+            for (int i = 0; i < arr1; i++)
+                for (int j = 0; j < arr2; j++) {
+                    if (a[i] == b[j]) {
+                        set.add(a[i]);
+                        k++;
+                        break;
+                    }
+                }
+        }
+        return set;
+    }
+
     public static List<Integer> getIndexValue(int... a) {
         int[] arrfinal = {1, 4, 5, 6, 7};
         List<Integer> list = new ArrayList();
@@ -81,22 +80,5 @@ public class Practice {
         }
         return list;
     }
-
-
-    // open the browser
-    //launch the URL
-    //click on the link navigate to google using inspecting link text
-    //switch to the new tab
-
-//    ChromeDriver driver=new ChromeDriver();
-//
-//    driver.findElement(By.linkText("Navigat to Google"))
-//    Set<> window = driver.getWindowHandles();
-//    for(
-//    Set s:window)
-//
-//    {
-//        if (!s)
-//    }
 }
 

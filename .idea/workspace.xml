@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/Practice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\OpenCartFramework\src\test\resources\testdata" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml">
+  <component name="RunManager" selected="Application.Practice">
     <configuration name="FibonacciSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.FibonacciSeries" />
       <module name="OpenCartFramework" />
@@ -163,8 +163,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml" />
         <item itemvalue="Application.Practice" />
+        <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml" />
         <item itemvalue="TestNG.ProductPageInfoTest.productImagesCountTest" />
         <item itemvalue="Application.FibonacciSeries" />
         <item itemvalue="TestNG.RegPageTest.userRegTest" />
@@ -323,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717429183364</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changes committed">
+      <option name="closed" value="true" />
+      <created>1717430088171</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717430088171</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
