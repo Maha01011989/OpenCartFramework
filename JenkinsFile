@@ -22,6 +22,11 @@ pipeline {
                 echo 'Deploying to dev..'
             }
         }
+        stage('Deploy to QA') {
+                    steps {
+                        echo 'Deploying to QA..'
+                    }
+                }
         stage('Run regression testcases on QA') {
             steps {
                 echo 'Running regression testcases on QA..'
