@@ -13,20 +13,18 @@ import com.qa.opencart.utils.ElementUtil;
 
 public class ProductInfoPage {
 
-    // Page class/Page Library/Page Object
     private WebDriver driver;
     private ElementUtil eleUtil;
 
     private Map<String, String> productMap = new HashMap<String, String>();
 
-    // 1. Private By Locators
 
     private By productHeader = By.tagName("h1");
     private By images = By.cssSelector("ul.thumbnails img");
     private By productMetaData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[1]/li");
     private By productPriceData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[2]/li");
 
-    // 2. Public Page Class Const...
+
     public ProductInfoPage(WebDriver driver) {
         this.driver = driver;
         eleUtil = new ElementUtil(driver);
@@ -44,10 +42,6 @@ public class ProductInfoPage {
         return totalImages;
     }
 
-    //	Brand: Apple
-//	Product Code: Product 18
-//	Reward Points: 800
-//	Availability: In Stock
     private void getProductMetaData() {
         List<WebElement> metaList = eleUtil.getElements(productMetaData);
         for (WebElement e : metaList) {
@@ -58,8 +52,6 @@ public class ProductInfoPage {
         }
     }
 
-    //	$2,000.00
-//	Ex Tax: $2,000.00
     private void getProductPriceData() {
         System.out.println("getting price data");
         List<WebElement> priceList = eleUtil.getElements(productPriceData);
@@ -78,5 +70,4 @@ public class ProductInfoPage {
         System.out.println("product Details: \n" + productMap);
         return productMap;
     }
-
 }
