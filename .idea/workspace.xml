@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed">
-      <change beforePath="$PROJECT_DIR$/JenkinsFile" beforeDir="false" afterPath="$PROJECT_DIR$/JenkinsFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/resources/config/config.properties" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/resources/testrunners/testng_sanity.xml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -338,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717564436013</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="changes committed">
+      <option name="closed" value="true" />
+      <created>1717734337039</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717734337039</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
