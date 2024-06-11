@@ -8,7 +8,6 @@ import com.qa.opencart.utils.TimeUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import com.qa.opencart.utils.ElementUtil;
 
 public class ProductInfoPage {
@@ -18,12 +17,10 @@ public class ProductInfoPage {
 
     private Map<String, String> productMap = new HashMap<String, String>();
 
-
     private By productHeader = By.tagName("h1");
     private By images = By.cssSelector("ul.thumbnails img");
     private By productMetaData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[1]/li");
     private By productPriceData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[2]/li");
-
 
     public ProductInfoPage(WebDriver driver) {
         this.driver = driver;
