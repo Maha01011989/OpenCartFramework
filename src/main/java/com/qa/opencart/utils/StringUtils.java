@@ -1,7 +1,5 @@
 package com.qa.opencart.utils;
 
-import java.util.Random;
-
 public class StringUtils {
 
     public static String getRandomEmailId() {
