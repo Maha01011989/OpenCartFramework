@@ -19,6 +19,11 @@ public class OptionsManager {
 
     public ChromeOptions getChromeOptions() {
         co = new ChromeOptions();
+
+        if(Boolean.parseBoolean(prop.getProperty("remote").trim()))
+        {
+            co.setCapability("browserName","chrome");
+        }
         if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
             co.addArguments("--headless");
         }
@@ -30,6 +35,10 @@ public class OptionsManager {
 
     public FirefoxOptions getFirefoxOptions() {
         fo = new FirefoxOptions();
+        if(Boolean.parseBoolean(prop.getProperty("remote").trim()))
+        {
+            fo.setCapability("browserName","firefox");
+        }
         if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
             fo.addArguments("--headless");
         }
@@ -41,6 +50,10 @@ public class OptionsManager {
 
     public EdgeOptions getEdgeOptions() {
         eo = new EdgeOptions();
+        if(Boolean.parseBoolean(prop.getProperty("remote").trim()))
+        {
+            eo.setCapability("browserName","edge");
+        }
         if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
             eo.addArguments("--headless");
         }

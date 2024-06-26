@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed" />
+    <list default="true" id="53554530-8f5a-427d-989a-a1d7ca824406" name="Changes" comment="changes committed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/OptionsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/OptionsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_regression.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +51,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application.FibonacciSeries.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hello.executor&quot;: &quot;Debug&quot;,
     &quot;Application.Practice.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -71,9 +80,22 @@
       <recent name="C:\Users\Administrator\IdeaProjects\OpenCartFramework\src\test\resources\testdata" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice">
+  <component name="RunManager" selected="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml">
     <configuration name="FibonacciSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.FibonacciSeries" />
+      <module name="OpenCartFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.opencart.constants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.Hello" />
       <module name="OpenCartFramework" />
       <extension name="coverage">
         <pattern>
@@ -136,38 +158,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegPageTest.userRegTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenCartFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.opencart.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.tests.RegPageTest" />
-      <option name="METHOD_NAME" value="userRegTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.Hello" />
       <item itemvalue="Application.Practice" />
       <item itemvalue="Application.FibonacciSeries" />
       <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml" />
       <item itemvalue="TestNG.ProductPageInfoTest.productImagesCountTest" />
-      <item itemvalue="TestNG.RegPageTest.userRegTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practice" />
         <item itemvalue="TestNG.C:/Users/Administrator/IdeaProjects/OpenCartFramework/src/test/resources/testrunners/testng_regression.xml" />
+        <item itemvalue="Application.Hello" />
+        <item itemvalue="Application.Practice" />
         <item itemvalue="TestNG.ProductPageInfoTest.productImagesCountTest" />
         <item itemvalue="Application.FibonacciSeries" />
-        <item itemvalue="TestNG.RegPageTest.userRegTest" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718085318143</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="changes committed">
+      <option name="closed" value="true" />
+      <created>1718085930523</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718085930523</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
